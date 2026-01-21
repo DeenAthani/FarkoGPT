@@ -1,0 +1,29 @@
+[project]
+name = "farko-gpt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "DeenAthani", email = "staymu1@wgu.edu" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.1",
+    "seaborn>=0.13.2",
+    "torch>=2.9.1",
+    "tqdm>=4.67.1",
+]
+
+[project.scripts]
+farko-gpt = "farko_gpt:main"
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "pytest>=9.0.2",
+]
